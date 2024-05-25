@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url(./assets/fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(./assets/fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(./assets/fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+:root {
+    --primary: rgb(43, 134, 155);
+    --secondary: rgb(37, 158, 158);
+    --text: #353535;
+    --gray: #a5a5a5;
+    --black: #000000;
+    --white: #fff;
+    --blue: rgb(6, 147, 227);
+    --purple: #5c5bae;
+    --gray2: #54595f;
+    --pink: #e78474;
+    --text-white: #d7d7d7;
+    --blue2: #3891a6;
+    --blue3: #206b7d;
+    --strange: #862f18;
+
+    --hero-gradient: linear-gradient(
+        -45deg,
+        rgba(3, 3, 3, 0.638),
+        rgba(43, 134, 155, 0.341)
+    );
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffffff;
+    color: var(--text);
+    font-size: 0.9rem;
+}
+
+.app {
+    z-index: 1;
+    overflow: hidden;
+}
+::-webkit-scrollbar {
+    background: rgb(179, 179, 179);
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 14%);
+    border-radius: 15px;
+}

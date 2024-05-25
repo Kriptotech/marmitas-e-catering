@@ -1,0 +1,37 @@
+.row {
+    background-color: #fff;
+    padding: 13px 0;
+    border-radius: 5px;
+    box-shadow: 0 7.5px 25px 0 rgba(0, 0, 0, 0.397);
+    margin-bottom: 50px;
+}
+.row .row_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--tb1);
+    padding: 0 20px;
+    cursor: pointer;
+}
+.row .row_header div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+.row .row_header div span {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.row p {
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid var(--primary);
+    line-height: 30px;
+}

@@ -1,0 +1,107 @@
+.container {
+    width: 100%;
+    padding: 80px 5%;
+    background: linear-gradient(to bottom, #ffffff, #373737);
+    position: relative;
+    z-index: 1;
+}
+.container::before {
+    background: #0f3a44;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    content: "";
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+}
+
+.container .header {
+    width: min(800px, 100%);
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.container .header strong {
+    display: block;
+    font-size: 1.2rem;
+    font-family: "Montserrat-Medium";
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 25px;
+}
+.container .header strong::after {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 150px;
+    height: 1.3px;
+    background-color: var(--primary);
+    border-radius: 5px;
+}
+.container .header p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+.container swiper-container {
+    width: min(1000px, 100%);
+    margin: auto;
+    background: linear-gradient(to bottom, #174f5c, #18505e);
+    padding: 30px 20px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.container swiper-slide {
+    width: 300px;
+    padding: 50px 10px;
+    background: linear-gradient(to bottom, #272626, #232323);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    transition: 0.5s;
+    border: 1px solid #5c5c5c;
+}
+.container swiper-slide:hover {
+    border: 1px solid #bebebe9f;
+    background: linear-gradient(to bottom, #174f5c, #18505e);
+}
+.container swiper-slide div {
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    color: #174f5c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container swiper-slide span {
+    display: block;
+    font-family: "Montserrat-Bold";
+    font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+    .box_desktop {
+        display: none;
+    }
+
+    .container swiper-slide span {
+        font-size: 0.9rem;
+    }
+}
+@media (min-width: 800px) {
+    .box_mobile {
+        display: none;
+    }
+}

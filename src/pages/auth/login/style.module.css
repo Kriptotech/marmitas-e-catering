@@ -1,0 +1,13 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    height: 100vh;
+    padding: 50px 5%;
+    background-color: #fafafa;
+}
+
+.container .box {
+    width: min(800px, 100%);
+}

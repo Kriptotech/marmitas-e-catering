@@ -1,0 +1,56 @@
+.form {
+    margin-top: 40px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form .input_box {
+    margin-bottom: 20px;
+}
+
+.form .input_box label {
+    display: block;
+    color: #5a5a5a;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+.form .input_box label span {
+    color: rgb(251, 96, 104);
+}
+
+.form .input_box input::placeholder {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #c6cbcf;
+}
+.form .input_box input {
+    padding: 0 10px;
+    width: 100%;
+    height: 40px;
+    border: 0.5px solid #cfd4d9;
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.form button {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--primary);
+    cursor: pointer;
+    margin-top: 20px;
+    color: #fff;
+    transition: 0.3s;
+}
+.form button:hover {
+    opacity: 0.9;
+}
+.form button:active {
+    opacity: 0.5;
+}

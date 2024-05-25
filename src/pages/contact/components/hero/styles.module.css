@@ -1,0 +1,41 @@
+.container {
+    width: 100%;
+    padding: 5rem 5%;
+    padding-bottom: 15rem;
+    background-image: linear-gradient(
+            to top,
+            rgba(3, 3, 3, 0.616),
+            rgba(11, 32, 63, 0.61)
+        ),
+        url(./assets/3_VIRTVS_MBERK_2126-oytzf86f8vtod2icjvee4qwy176hyxfzhvbhcadavs.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.container .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: min(600px, 100%);
+    margin: auto;
+    text-align: center;
+}
+.container .box p {
+    margin: 30px 0;
+    margin-bottom: 40px;
+    font-weight: 600;
+    line-height: 26px;
+    font-size: 1rem;
+}
+.container .box span {
+    font-weight: 400;
+}
+
+@media (max-width: 820px) {
+    .container .box p {
+        font-size: 0.9rem;
+    }
+}

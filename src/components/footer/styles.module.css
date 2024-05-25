@@ -1,0 +1,65 @@
+.footer {
+    width: 100%;
+    background-color: #353535;
+    padding: 50px 0;
+    padding-bottom: 0px;
+    color: #fff;
+}
+.footer .row {
+    padding: 0 5%;
+    width: min(1000px, 100%);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.footer .row div {
+    display: flex;
+    flex-direction: column;
+}
+.footer .row div:last-child {
+    align-items: end;
+}
+.footer .row div p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+.footer .row div span {
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    display: block;
+    font-family: "Montserrat-Bold";
+}
+.footer .row div a {
+    padding-bottom: 5px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 0.8rem;
+    transition: 0.3s;
+    border-bottom: 1px solid transparent;
+    color: #fff;
+}
+.footer .row div a:hover {
+    color: var(--primary);
+}
+
+.footer .bottom {
+    width: 100%;
+    padding: 30px 5%;
+    margin-top: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #585858;
+    font-size: 1rem;
+    font-family: "Montserrat-Medium";
+}
+
+@media (max-width: 590px) {
+    .footer .row div:last-child {
+        align-items: start;
+    }
+}

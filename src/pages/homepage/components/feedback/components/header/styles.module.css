@@ -1,0 +1,37 @@
+.header {
+    text-align: center;
+    padding-top: 70px;
+}
+.header small {
+    color: var(--primary);
+    display: inline-block;
+    font-size: 0.8rem;
+    position: relative;
+}
+.header small::after,
+.header small::before {
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary);
+    content: "";
+}
+.header small::before {
+    left: -60px;
+}
+
+.header h2 {
+    font-size: 2rem;
+    width: min(600px, 100%);
+    margin: auto;
+    margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+    .header h2 {
+        font-size: 1.5rem;
+    }
+}
